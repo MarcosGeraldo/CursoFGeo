@@ -1,0 +1,22 @@
+Plano de Informação: Drenagem_lin
+Identificador do Plano: 44
+
+Coordenada Inicial(X): 147920.356
+Coordenada Inicial(Y): 8222625.995
+Coordenada Final(X): 253098.262
+Coordenada Final(Y): 8285008.077
+
+Projeção: UTM
+Identificador da Projeção: 70
+Datum: SAD69
+Unidade: Meters
+Longitude de Origem: -4.500000e+001
+Latitude de Origem: 0.000000e+000
+Offset X: 5.000000e+005
+Offset Y: 1.000000e+007
+Paralelo Padrão 1: 0.000000e+000
+Paralelo Padrão 2: 0.000000e+000
+Escala: 9.996000e-001
+Hemisfério: Sul
+
+Número de linhas:390

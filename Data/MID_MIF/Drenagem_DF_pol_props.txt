@@ -1,0 +1,22 @@
+Plano de Informação: Drenagem_DF_spr_pol
+Identificador do Plano: 42
+
+Coordenada Inicial(X): 156932.110
+Coordenada Inicial(Y): 8223490.228
+Coordenada Final(X): 250002.178
+Coordenada Final(Y): 8276388.700
+
+Projeção: UTM
+Identificador da Projeção: 67
+Datum: SAD69
+Unidade: Meters
+Longitude de Origem: -4.500000e+001
+Latitude de Origem: 0.000000e+000
+Offset X: 5.000000e+005
+Offset Y: 1.000000e+007
+Paralelo Padrão 1: 0.000000e+000
+Paralelo Padrão 2: 0.000000e+000
+Escala: 9.996000e-001
+Hemisfério: Sul
+
+Número de polígonos:33
