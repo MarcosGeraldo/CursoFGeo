@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\Program%20Files\TerraView-5.5.1\bin\..\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>Exercicio_3-3</Title>
+
+  <Author>INPE</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="POSTGIS" id="31d6d7f1-c6fb-458b-99d7-95546cd396b8" type="POSTGIS">
+      <te_da:Title>localhost@fgeo@postgres</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>pgsql%3A%2F%2Fpostgres%3AQ29weXJpZ2h0LUlOUEUtQlI706F737467726573%40localhost%3A5432%2Ffgeo%3FPG_CLIENT_ENCODING%3DUTF-8</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetLayer id="8662169f-c9db-4d87-8ca9-80a1eca93a06">
+      <te_map:Title>public.municipio_go</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>public.municipio_go</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.247884675005999" lly="-19.482994655930302" urx="-45.906544772206701" ury="-12.395765937175501"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#F9CE20</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="1b5c1c16-68a9-4c45-b818-d3b88279be5a">
+      <te_map:Title>public.ipeadata_2005</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>public.ipeadata_2005</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>0</te_map:SRID>
+        <te_map:Proj4/>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="1.7976931348623157e+308" lly="1.7976931348623157e+308" urx="-1.7976931348623157e+308" ury="-1.7976931348623157e+308"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+    </te_map:DataSetLayer>
+    <te_map:QueryLayer id="8cd77ed1-d6d8-424e-90fe-866ee1e5b50b">
+      <te_map:Title>municipio_go_ipea</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:Chart>
+        <te_map:Type>PIE</te_map:Type>
+        <te_map:ContourColor>#000000</te_map:ContourColor>
+        <te_map:ContourWidth>1</te_map:ContourWidth>
+        <te_map:Height>32</te_map:Height>
+        <te_map:IsVisible>false</te_map:IsVisible>
+        <te_map:Summary>MIN</te_map:Summary>
+        <te_map:Slice>
+          <te_map:PropertyName>arroz</te_map:PropertyName>
+          <te_map:Color>#1D63B3</te_map:Color>
+        </te_map:Slice>
+        <te_map:Slice>
+          <te_map:PropertyName>cana</te_map:PropertyName>
+          <te_map:Color>#F99880</te_map:Color>
+        </te_map:Slice>
+        <te_map:Slice>
+          <te_map:PropertyName>mandioca</te_map:PropertyName>
+          <te_map:Color>#FFFF00</te_map:Color>
+        </te_map:Slice>
+      </te_map:Chart>
+      <te_da:Select>
+        <te_da:Fields>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.fid</te_da:PropertyName>
+            <te_da:Alias>"municipio_go.fid"</te_da:Alias>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.fid</te_da:PropertyName>
+            <te_da:Alias>"ipeadata_2005.fid"</te_da:Alias>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nome</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nomemeso</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nomemicro</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.estado</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nome_acen</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.cod_ibge</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.reg_planej</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal08</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal07</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal06</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal05</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal04</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal03</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal02</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal01</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.ogr_geometry</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.sigla</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.codibge</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.nomemuni</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.arroz</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.cana</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.mandioca</te_da:PropertyName>
+          </te_da:Field>
+        </te_da:Fields>
+        <te_da:From>
+          <te_da:JoinItem>
+            <te_da:FromItem>
+              <te_da:Value>public.municipio_go</te_da:Value>
+              <te_da:Alias>municipio_go</te_da:Alias>
+            </te_da:FromItem>
+            <te_da:FromItem>
+              <te_da:Value>public.ipeadata_2005</te_da:Value>
+              <te_da:Alias>ipeadata_2005</te_da:Alias>
+            </te_da:FromItem>
+            <te_da:Type>LEFT_JOIN</te_da:Type>
+            <te_da:Condition>
+              <te_da:JoinConditionOn>
+                <te_da:Function>
+                  <te_da:Name>=</te_da:Name>
+                  <te_da:PropertyName>municipio_go.cod_ibge</te_da:PropertyName>
+                  <te_da:PropertyName>ipeadata_2005.codibge</te_da:PropertyName>
+                </te_da:Function>
+              </te_da:JoinConditionOn>
+            </te_da:Condition>
+          </te_da:JoinItem>
+        </te_da:From>
+      </te_da:Select>
+      <te_map:DataSetName>public.municipio_go</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.24788467500602" lly="-19.482994655930273" urx="-45.906544772206693" ury="-12.395765937175472"/>
+      <te_map:RendererId>QUERY_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:MaxScaleDenominator>0</se:MaxScaleDenominator>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#b542a2</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.00</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1.00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal/>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.00</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.00</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:QueryLayer>
+    <te_map:QueryLayer id="d3f1f4f8-668c-4951-9be2-adb32268f34e">
+      <te_map:Title>municipio_go_ipea2</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:Chart>
+        <te_map:Type>BAR</te_map:Type>
+        <te_map:ContourColor>#000000</te_map:ContourColor>
+        <te_map:ContourWidth>1</te_map:ContourWidth>
+        <te_map:Height>32</te_map:Height>
+        <te_map:BarWidth>16</te_map:BarWidth>
+        <te_map:IsVisible>true</te_map:IsVisible>
+        <te_map:MaxValue>1873920</te_map:MaxValue>
+        <te_map:Summary>MIN</te_map:Summary>
+        <te_map:Slice>
+          <te_map:PropertyName>arroz</te_map:PropertyName>
+          <te_map:Color>#175E4B</te_map:Color>
+        </te_map:Slice>
+        <te_map:Slice>
+          <te_map:PropertyName>cana</te_map:PropertyName>
+          <te_map:Color>#E796CF</te_map:Color>
+        </te_map:Slice>
+        <te_map:Slice>
+          <te_map:PropertyName>mandioca</te_map:PropertyName>
+          <te_map:Color>#25D7D0</te_map:Color>
+        </te_map:Slice>
+      </te_map:Chart>
+      <te_da:Select>
+        <te_da:Fields>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.fid</te_da:PropertyName>
+            <te_da:Alias>"municipio_go.fid"</te_da:Alias>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.fid</te_da:PropertyName>
+            <te_da:Alias>"ipeadata_2005.fid"</te_da:Alias>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nome</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nomemeso</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nomemicro</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.estado</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.nome_acen</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.cod_ibge</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.reg_planej</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal08</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal07</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal06</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal05</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal04</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal03</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal02</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.poptotal01</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipio_go.ogr_geometry</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.sigla</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.codibge</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.nomemuni</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.arroz</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.cana</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>ipeadata_2005.mandioca</te_da:PropertyName>
+          </te_da:Field>
+        </te_da:Fields>
+        <te_da:From>
+          <te_da:JoinItem>
+            <te_da:FromItem>
+              <te_da:Value>public.municipio_go</te_da:Value>
+              <te_da:Alias>municipio_go</te_da:Alias>
+            </te_da:FromItem>
+            <te_da:FromItem>
+              <te_da:Value>public.ipeadata_2005</te_da:Value>
+              <te_da:Alias>ipeadata_2005</te_da:Alias>
+            </te_da:FromItem>
+            <te_da:Type>LEFT_JOIN</te_da:Type>
+            <te_da:Condition>
+              <te_da:JoinConditionOn>
+                <te_da:Function>
+                  <te_da:Name>=</te_da:Name>
+                  <te_da:PropertyName>municipio_go.cod_ibge</te_da:PropertyName>
+                  <te_da:PropertyName>ipeadata_2005.codibge</te_da:PropertyName>
+                </te_da:Function>
+              </te_da:JoinConditionOn>
+            </te_da:Condition>
+          </te_da:JoinItem>
+        </te_da:From>
+      </te_da:Select>
+      <te_map:DataSetName>public.municipio_go</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.24788467500602" lly="-19.482994655930273" urx="-45.906544772206693" ury="-12.395765937175472"/>
+      <te_map:RendererId>QUERY_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#9D88B8</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:QueryLayer>
+  </te_map:LayerList>
+
+</Project>

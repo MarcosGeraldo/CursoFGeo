@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\Program%20Files\TerraView-5.5.1\bin\..\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>Exercicio_2-3</Title>
+
+  <Author>INPE</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="GDAL" id="984dcb55-4b27-48da-a8f1-b651a8bf4942" type="GDAL">
+      <te_da:Title>B8_DF_ComRuido</te_da:Title>
+      <te_da:Description>A single raster file</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FImagens%2FLandsat_7_31-05-2006%2FB8_DF_ComRuido.tif</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="d1a99d21-4336-4052-83e5-b7c7b6d6adff" type="OGR">
+      <te_da:Title>malha_viaria.shp</te_da:Title>
+      <te_da:Description>A single vector file: C:/Curso_FGeo/Dados/Shape/GOIAS/Infra_estrut/malha_viaria.shp</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FShape%2FGOIAS%2FInfra_estrut%2Fmalha_viaria.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="d457a527-1d09-4fee-8859-a75352afbb15" type="OGR">
+      <te_da:Title>Rodovias.MIF</te_da:Title>
+      <te_da:Description>A single vector file: D:/Curso_FGeo/Dados/MID_MIF/Rodovias.MIF</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FMID_MIF%2FRodovias.MIF</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetLayer id="02de9340-34c8-4476-8bdd-cc1a6ac2f93a">
+      <te_map:Title>Rodovias</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>Rodovias</te_map:DataSetName>
+      <te_map:DataSourceId>d457a527-1d09-4fee-8859-a75352afbb15</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>100019</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=23 +south +ellps=aust_SA +towgs84=-57,1,-41,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="148833" lly="8222728" urx="252905.4375" ury="8284807.5"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:LineSymbolizer version="1.1.0">
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#00aaff</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1.00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal/>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.00</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.00</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:LineSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:LineSymbolizer version="1.1.0">
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#00ff00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:LineSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="d4abad5d-6b5b-4f71-be38-b4b4c1b83929">
+      <te_map:Title>malha_viaria</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>malha_viaria</te_map:DataSetName>
+      <te_map:DataSourceId>d1a99d21-4336-4052-83e5-b7c7b6d6adff</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.210838317871094" lly="-19.428534862139557" urx="-46.013481741074138" ury="-12.440795803776979"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:LineSymbolizer version="1.1.0">
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#46fc13</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1.00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal/>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.00</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.00</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:LineSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:LineSymbolizer version="1.1.0">
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#00ff00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:LineSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="8f6c1ba6-fd99-4620-a68b-840106e54027">
+      <te_map:Title>B8_DF_ComRuido.tif</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>B8_DF_ComRuido.tif</te_map:DataSetName>
+      <te_map:DataSourceId>984dcb55-4b27-48da-a8f1-b651a8bf4942</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>32623</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=23 +datum=WGS84 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="148012.49999999997" lly="-1777222.5" urx="253012.49999999997" ury="-1715167.5"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+              <se:NoDataValue>0</se:NoDataValue>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+  </te_map:LayerList>
+
+</Project>

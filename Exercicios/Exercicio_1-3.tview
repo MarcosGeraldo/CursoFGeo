@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\Program%20Files\TerraView-5.5.1\bin\..\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>Exercicio_1-3</Title>
+
+  <Author>INPE</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="OGR" id="18ac3970-d22d-4234-ae6f-78596bbc7802" type="OGR">
+      <te_da:Title>UF_BR.shp</te_da:Title>
+      <te_da:Description>A single vector file: C:/Curso_FGeo/Dados/Shape/Brasil/UF_BR.shp</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FShape%2FBrasil%2FUF_BR.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="3a80ffae-2b05-41d7-b993-06a6963a4c54" type="OGR">
+      <te_da:Title>UF_BR_Policonica.shp</te_da:Title>
+      <te_da:Description>A single vector file: C:/Curso_FGeo/Dados/Shape/Brasil/UF_BR_Policonica.shp</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FShape%2FBrasil%2FUF_BR_Policonica.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="40dcbe0f-0f2c-438d-8e64-b65b9b75ad15" type="GDAL">
+      <te_da:Title>ETM_Comp_345_WGS84</te_da:Title>
+      <te_da:Description>A single raster file</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FImagens%2FLandsat_DF%2FETM_Comp_345_WGS84.tif</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="e8b62836-9120-4b0c-aca7-95271ad168d4" type="GDAL">
+      <te_da:Title>ETM_Comp_345</te_da:Title>
+      <te_da:Description>A single raster file</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FImagens%2FLandsat_DF%2FETM_Comp_345.tif</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetLayer id="ad49a195-30bd-4fb8-ae33-c08928503fdb">
+      <te_map:Title>UF_BR</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>UF_BR</te_map:DataSetName>
+      <te_map:DataSourceId>18ac3970-d22d-4234-ae6f-78596bbc7802</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-73.990449968998277" lly="-33.752081270595923" urx="-28.8359076292382" ury="5.2718410772455755"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#0BEA89</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00ff00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="5c07df14-213a-4608-aeb7-6fe402ea41ff">
+      <te_map:Title>UF_BR_Policonica</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>UF_BR_Policonica</te_map:DataSetName>
+      <te_map:DataSourceId>3a80ffae-2b05-41d7-b993-06a6963a4c54</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>5880</te_map:SRID>
+        <te_map:Proj4>+proj=poly +lat_0=0 +lon_0=-54 +x_0=5000000 +y_0=10000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="2794536.7931603896" lly="6263674.4925888088" urx="7615283.0375392344" ury="10586376.857722336"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#2EA5B4</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00ff00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="2086691f-3484-4e9f-849d-3b71031fd0c5">
+      <te_map:Title>ETM_Comp_345.tif</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>ETM_Comp_345.tif</te_map:DataSetName>
+      <te_map:DataSourceId>e8b62836-9120-4b0c-aca7-95271ad168d4</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>29193</te_map:SRID>
+        <te_map:Proj4>+proj=utm +zone=23 +south +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +units=m +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="146475.83061342599" lly="8221044.0260735201" urx="254085.83061342599" ury="8286564.0260735201"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="3a5b1c33-c9bd-4278-bb20-39ac8b8128f2">
+      <te_map:Title>ETM_Comp_345_WGS84.tif</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>ETM_Comp_345_WGS84.tif</te_map:DataSetName>
+      <te_map:DataSourceId>40dcbe0f-0f2c-438d-8e64-b65b9b75ad15</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-48.304018957203759" lly="-16.078491443255761" urx="-47.292993356251067" ury="-15.474250278747544"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+  </te_map:LayerList>
+
+</Project>

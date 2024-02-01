@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\Program%20Files\TerraView-5.5.1\bin\..\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>Exercicio_3-2</Title>
+
+  <Author>INPE</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="POSTGIS" id="31d6d7f1-c6fb-458b-99d7-95546cd396b8" type="POSTGIS">
+      <te_da:Title>localhost@fgeo@postgres</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>pgsql%3A%2F%2Fpostgres%3AQ29weXJpZ2h0LUlOUEUtQlI706F737467726573%40localhost%3A5432%2Ffgeo%3FPG_CLIENT_ENCODING%3DUTF-8</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetLayer id="a48ab106-01a8-4d5c-9049-d70a637219c5">
+      <te_map:Title>public.municipio_go</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:Grouping>
+        <te_map:PropertyName>nomemeso</te_map:PropertyName>
+        <te_map:PropertyDataType>15</te_map:PropertyDataType>
+        <te_map:Type>UNIQUE_VALUE</te_map:Type>
+        <te_map:Precision>6</te_map:Precision>
+        <te_map:NumSlices>5</te_map:NumSlices>
+        <te_map:Summary>NONE</te_map:Summary>
+      </te_map:Grouping>
+      <te_map:DataSetName>public.municipio_go</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.247884675005999" lly="-19.482994655930302" urx="-45.906544772206701" ury="-12.395765937175501"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de Agrupamento: Valor Ãšnico</se:Name>
+          <se:Description>
+            <se:Title>InformaÃ§Ã£o do Agrupamento:
+\tPropriedade: nomemeso
+\tNÃºmero de Fatias: 5
+\tPrecisÃ£o: 6
+\tDesvio PadrÃ£o: 0.5
+\tSumÃ¡rio: NONE</se:Title>
+          </se:Description>
+          <se:Rule>
+            <se:Name>CENTRO GOIANO</se:Name>
+            <se:Description>
+              <se:Title>(nomemeso = 'CENTRO GOIANO')</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>nomemeso</ogc:PropertyName>
+                <ogc:Literal>CENTRO GOIANO</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#AAAA00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>LESTE GOIANO</se:Name>
+            <se:Description>
+              <se:Title>(nomemeso = 'LESTE GOIANO')</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>nomemeso</ogc:PropertyName>
+                <ogc:Literal>LESTE GOIANO</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#4195FF</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>NOROESTE GOIANO</se:Name>
+            <se:Description>
+              <se:Title>(nomemeso = 'NOROESTE GOIANO')</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>nomemeso</ogc:PropertyName>
+                <ogc:Literal>NOROESTE GOIANO</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#A955BF</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>NORTE GOIANO</se:Name>
+            <se:Description>
+              <se:Title>(nomemeso = 'NORTE GOIANO')</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>nomemeso</ogc:PropertyName>
+                <ogc:Literal>NORTE GOIANO</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#D41721</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>SUL GOIANO</se:Name>
+            <se:Description>
+              <se:Title>(nomemeso = 'SUL GOIANO')</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>nomemeso</ogc:PropertyName>
+                <ogc:Literal>SUL GOIANO</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00ff00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>No Value</se:Name>
+            <se:Description>
+              <se:Title>(nomemeso = '1234567890987654321')</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:PropertyIsEqualTo>
+                <ogc:PropertyName>nomemeso</ogc:PropertyName>
+                <ogc:Literal>1234567890987654321</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#5555ff</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="2036c70a-c48c-4ebc-a45c-0662a3f60adb">
+      <te_map:Title>public.municipio_go</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:Grouping>
+        <te_map:PropertyName>poptotal08</te_map:PropertyName>
+        <te_map:PropertyDataType>13</te_map:PropertyDataType>
+        <te_map:Type>QUANTIL</te_map:Type>
+        <te_map:Precision>6</te_map:Precision>
+        <te_map:NumSlices>5</te_map:NumSlices>
+        <te_map:Summary>NONE</te_map:Summary>
+      </te_map:Grouping>
+      <te_map:DataSetName>public.municipio_go</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.247884675005999" lly="-19.482994655930302" urx="-45.906544772206701" ury="-12.395765937175501"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de Agrupamento: Quantil</se:Name>
+          <se:Description>
+            <se:Title>InformaÃ§Ã£o do Agrupamento:
+\tPropriedade: poptotal08
+\tNÃºmero de Fatias: 5
+\tPrecisÃ£o: 6
+\tDesvio PadrÃ£o: 0.5
+\tSumÃ¡rio: NONE</se:Title>
+          </se:Description>
+          <se:Rule>
+            <se:Name>[1006.999999, 3386.000000[</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '1006.999999') and (poptotal08 &lt; '3386.000000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1006.999999</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>3386.000000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#ffaaff</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[3386.000000, 4952.000000[</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '3386.000000') and (poptotal08 &lt; '4952.000000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>3386.000000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>4952.000000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#0080FF</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[4952.000000, 8570.000000[</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '4952.000000') and (poptotal08 &lt; '8570.000000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>4952.000000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>8570.000000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#82FF7E</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[8570.000000, 20120.000000[</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '8570.000000') and (poptotal08 &lt; '20120.000000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>8570.000000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>20120.000000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FF4200</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[20120.000000, 1265394.000001[</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '20120.000000') and (poptotal08 &lt; '1265394.000001'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>20120.000000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1265394.000001</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#aaaa00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>No Value</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '1234567890987654321') and (poptotal08 &lt; '1234567890987654321'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1234567890987654321</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1234567890987654321</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#dddddd</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="70b90c76-6763-44d2-ba46-615acee1a421">
+      <te_map:Title>public.municipio_go</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:Grouping>
+        <te_map:PropertyName>poptotal08</te_map:PropertyName>
+        <te_map:PropertyDataType>13</te_map:PropertyDataType>
+        <te_map:Type>EQUAL_STEPS</te_map:Type>
+        <te_map:Precision>6</te_map:Precision>
+        <te_map:NumSlices>10</te_map:NumSlices>
+        <te_map:Summary>NONE</te_map:Summary>
+      </te_map:Grouping>
+      <te_map:DataSetName>public.municipio_go</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.247884675005999" lly="-19.482994655930302" urx="-45.906544772206701" ury="-12.395765937175501"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de Agrupamento: Passo Igual</se:Name>
+          <se:Description>
+            <se:Title>InformaÃ§Ã£o do Agrupamento:
+\tPropriedade: poptotal08
+\tNÃºmero de Fatias: 10
+\tPrecisÃ£o: 6
+\tDesvio PadrÃ£o: 0.5
+\tSumÃ¡rio: NONE</se:Title>
+          </se:Description>
+          <se:Rule>
+            <se:Name>[1006.999999, 127445.700000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '1006.999999') and (poptotal08 &lt; '127445.700000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1006.999999</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>127445.700000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FEEEE1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[127445.700000, 253884.400000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '127445.700000') and (poptotal08 &lt; '253884.400000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>127445.700000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>253884.400000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FED9BA</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[253884.400000, 380323.100000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '253884.400000') and (poptotal08 &lt; '380323.100000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>253884.400000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>380323.100000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FEC392</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[380323.100000, 506761.800000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '380323.100000') and (poptotal08 &lt; '506761.800000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>380323.100000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>506761.800000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FEAC69</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[506761.800000, 633200.500000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '506761.800000') and (poptotal08 &lt; '633200.500000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>506761.800000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>633200.500000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FE9641</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[633200.500000, 759639.200000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '633200.500000') and (poptotal08 &lt; '759639.200000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>633200.500000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>759639.200000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#FE7A0E</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[759639.200000, 886077.900000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '759639.200000') and (poptotal08 &lt; '886077.900000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>759639.200000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>886077.900000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#EA6900</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[886077.900000, 1012516.600000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '886077.900000') and (poptotal08 &lt; '1012516.600000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>886077.900000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1012516.600000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#CA5A00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[1012516.600000, 1138955.300000]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '1012516.600000') and (poptotal08 &lt; '1138955.300000'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1012516.600000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1138955.300000</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#A84B00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>[1138955.300000, 1265394.000001]</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '1138955.300000') and (poptotal08 &lt; '1265394.000001'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1138955.300000</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1265394.000001</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#863C00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+          <se:Rule>
+            <se:Name>No Value</se:Name>
+            <se:Description>
+              <se:Title>((poptotal08 &gt;= '1234567890987654321') and (poptotal08 &lt; '1234567890987654321'))</se:Title>
+            </se:Description>
+            <ogc:Filter>
+              <ogc:And>
+                <ogc:PropertyIsGreaterThanOrEqualTo>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1234567890987654321</ogc:Literal>
+                </ogc:PropertyIsGreaterThanOrEqualTo>
+                <ogc:PropertyIsLessThan>
+                  <ogc:PropertyName>poptotal08</ogc:PropertyName>
+                  <ogc:Literal>1234567890987654321</ogc:Literal>
+                </ogc:PropertyIsLessThan>
+              </ogc:And>
+            </ogc:Filter>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#dddddd</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00FF00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+  </te_map:LayerList>
+
+</Project>

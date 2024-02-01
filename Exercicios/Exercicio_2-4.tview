@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\Program%20Files\TerraView-5.5.1\bin\..\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>Exercicio_2-4</Title>
+
+  <Author>INPE</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="POSTGIS" id="31d6d7f1-c6fb-458b-99d7-95546cd396b8" type="POSTGIS">
+      <te_da:Title>localhost@fgeo@postgres</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>pgsql%3A%2F%2Fpostgres%3AQ29weXJpZ2h0LUlOUEUtQlI706F737467726573%40localhost%3A5432%2Ffgeo%3FPG_CLIENT_ENCODING%3DUTF-8</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="OGR" id="f46e1e63-490b-4ba6-9d24-1c4a1b295970" type="OGR">
+      <te_da:Title>C:/Curso_FGeo/Dados/IBGE/Sede_municipios_BR_2.csv</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FIBGE%2FSede_municipios_BR_2.csv</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetAdapterLayer id="056cb946-36d4-42d6-9236-b53f07eda1da">
+      <te_map:Title>Sede_municipios_BR_2</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>Sede_municipios_BR_2</te_map:DataSetName>
+      <te_map:DataSourceId>f46e1e63-490b-4ba6-9d24-1c4a1b295970</te_map:DataSourceId>
+      <te_map:RendererType>ABSTRACT_LAYER_RENDERER</te_map:RendererType>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#9D0401</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00FF00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+      <te_map:Converter>
+        <te_map:InDataSetTypeName>Sede_municipios_BR_2</te_map:InDataSetTypeName>
+        <te_map:OutPropInfo>
+          <te_map:type>7</te_map:type>
+          <te_map:name>FID</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>7</te_map:type>
+          <te_map:name>cod_ibge</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>15</te_map:type>
+          <te_map:name>nome</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>15</te_map:type>
+          <te_map:name>uf</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>15</te_map:type>
+          <te_map:name>reg</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>15</te_map:type>
+          <te_map:name>meso_reg</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>15</te_map:type>
+          <te_map:name>micro_reg</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>13</te_map:type>
+          <te_map:name>lat</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>13</te_map:type>
+          <te_map:name>long</te_map:name>
+          <te_map:geomType>-1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>0</te_map:SRID>
+            <te_map:Proj4/>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:OutPropInfo>
+          <te_map:type>17</te_map:type>
+          <te_map:name>OGR_POINT</te_map:name>
+          <te_map:geomType>1</te_map:geomType>
+          <te_map:SRSInfo>
+            <te_map:SRID>4326</te_map:SRID>
+            <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+          </te_map:SRSInfo>
+        </te_map:OutPropInfo>
+        <te_map:PropertyIndex OutIdx="0">
+          <te_map:InIdx>0</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="1">
+          <te_map:InIdx>1</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="2">
+          <te_map:InIdx>2</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="3">
+          <te_map:InIdx>3</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="4">
+          <te_map:InIdx>4</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="5">
+          <te_map:InIdx>5</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="6">
+          <te_map:InIdx>6</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="7">
+          <te_map:InIdx>7</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="8">
+          <te_map:InIdx>8</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:PropertyIndex OutIdx="9">
+          <te_map:InIdx>8</te_map:InIdx>
+          <te_map:InIdx>7</te_map:InIdx>
+        </te_map:PropertyIndex>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>GenericAttributeConverter</te_map:FunctionName>
+        <te_map:FunctionName>XYToPointConverter</te_map:FunctionName>
+      </te_map:Converter>
+    </te_map:DataSetAdapterLayer>
+    <te_map:DataSetLayer id="b28fe06d-64a9-494b-b472-80101997d003">
+      <te_map:Title>public.municipios_br</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>public.municipios_br</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-72.896000000000001" lly="-33.691000000000003" urx="-32.411000000000001" ury="4.5960000000000001"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#006BEF</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00FF00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:QueryLayer id="f8bf3cf5-f70a-48bf-b2ad-b31a9d75de45">
+      <te_map:Title>public.municipios_br</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_da:Select>
+        <te_da:Fields>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.fid</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.cod_ibge</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.nome</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.uf</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.reg</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.meso_reg</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.micro_reg</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.lat</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.long</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.ogr_point</te_da:PropertyName>
+          </te_da:Field>
+        </te_da:Fields>
+        <te_da:From>
+          <te_da:FromItem>
+            <te_da:Value>public.municipios_br</te_da:Value>
+            <te_da:Alias>municipios_br</te_da:Alias>
+          </te_da:FromItem>
+        </te_da:From>
+        <te_da:Where>
+          <te_da:Function>
+            <te_da:Name>or</te_da:Name>
+            <te_da:Function>
+              <te_da:Name>=</te_da:Name>
+              <te_da:PropertyName>uf</te_da:PropertyName>
+              <te_da:Literal type="15">DF</te_da:Literal>
+            </te_da:Function>
+            <te_da:Function>
+              <te_da:Name>=</te_da:Name>
+              <te_da:PropertyName>uf</te_da:PropertyName>
+              <te_da:Literal type="15">GO</te_da:Literal>
+            </te_da:Function>
+          </te_da:Function>
+        </te_da:Where>
+      </te_da:Select>
+      <te_map:DataSetName>public.municipios_br</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.204999999999998" lly="-19.183" urx="-46.113" ury="-13.037000000000001"/>
+      <te_map:RendererId>QUERY_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#A4B160</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00FF00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:QueryLayer>
+    <te_map:QueryLayer id="d7b114a6-1056-4733-9d7c-64f42e2196a9">
+      <te_map:Title>public.municipios_br_2</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_da:Select>
+        <te_da:Fields>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.fid</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.cod_ibge</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.nome</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.uf</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.reg</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.meso_reg</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.micro_reg</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.lat</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.long</te_da:PropertyName>
+          </te_da:Field>
+          <te_da:Field>
+            <te_da:PropertyName>municipios_br.ogr_point</te_da:PropertyName>
+          </te_da:Field>
+        </te_da:Fields>
+        <te_da:From>
+          <te_da:FromItem>
+            <te_da:Value>public.municipios_br</te_da:Value>
+            <te_da:Alias>municipios_br</te_da:Alias>
+          </te_da:FromItem>
+        </te_da:From>
+        <te_da:Where>
+          <te_da:Function>
+            <te_da:Name>or</te_da:Name>
+            <te_da:Function>
+              <te_da:Name>=</te_da:Name>
+              <te_da:PropertyName>uf</te_da:PropertyName>
+              <te_da:Literal type="15">GO</te_da:Literal>
+            </te_da:Function>
+            <te_da:Function>
+              <te_da:Name>=</te_da:Name>
+              <te_da:PropertyName>uf</te_da:PropertyName>
+              <te_da:Literal type="15">DF</te_da:Literal>
+            </te_da:Function>
+          </te_da:Function>
+        </te_da:Where>
+      </te_da:Select>
+      <te_map:DataSetName>public.municipios_br</te_map:DataSetName>
+      <te_map:DataSourceId>31d6d7f1-c6fb-458b-99d7-95546cd396b8</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.204999999999998" lly="-19.183" urx="-46.113" ury="-13.037000000000001"/>
+      <te_map:RendererId>QUERY_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#FB6D42</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00FF00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:QueryLayer>
+  </te_map:LayerList>
+
+</Project>

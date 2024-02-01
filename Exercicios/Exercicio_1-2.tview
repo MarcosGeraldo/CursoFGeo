@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\Program%20Files\TerraView-5.5.1\bin\..\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>Exercicio_1-2</Title>
+
+  <Author>INPE</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="OGR" id="315c7686-6abe-444a-985e-3659f663df7d" type="OGR">
+      <te_da:Title>pocos_tubulares.shp</te_da:Title>
+      <te_da:Description>A single vector file: C:/Curso_FGeo/Dados/CIEG/pocos_tubulares.shp</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FCIEG%2Fpocos_tubulares.shp</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetLayer id="a71b9fd2-48ea-47c8-8559-0dedd80b71fe">
+      <te_map:Title>pocos_tubulares</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>pocos_tubulares</te_map:DataSetName>
+      <te_map:DataSourceId>315c7686-6abe-444a-985e-3659f663df7d</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.110300000000002" lly="-19.1874" urx="-45.993099999999998" ury="-12.956"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#FF21AA</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00ff00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="c260a9fc-7b0f-4b40-b7df-126a648b4720">
+      <te_map:Title>pocos_tubulares_SAD69</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>pocos_tubulares</te_map:DataSetName>
+      <te_map:DataSourceId>315c7686-6abe-444a-985e-3659f663df7d</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4618</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +ellps=aust_SA +towgs84=-66.87,4.37,-38.52,0,0,0,0 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.110300000000002" lly="-19.1874" urx="-45.993099999999998" ury="-12.956"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#2EA050</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00ff00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="e1cbc609-0586-48f2-b84d-95687b2aa847">
+      <te_map:Title>pocos_tubulares_WGS84</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>pocos_tubulares</te_map:DataSetName>
+      <te_map:DataSourceId>315c7686-6abe-444a-985e-3659f663df7d</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-53.110300000000002" lly="-19.1874" urx="-45.993099999999998" ury="-12.956"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#bd4b25</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.00</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1.00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal/>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.00</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PointSymbolizer version="1.1.0">
+              <se:Graphic>
+                <se:Mark>
+                  <se:WellKnownName>circle</se:WellKnownName>
+                  <se:Fill>
+                    <se:SvgParameter name="fill">
+                      <ogc:Literal>#00ff00</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="fill-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Fill>
+                  <se:Stroke>
+                    <se:SvgParameter name="stroke">
+                      <ogc:Literal>#000000</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-opacity">
+                      <ogc:Literal>1.0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-width">
+                      <ogc:Literal>1</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linejoin">
+                      <ogc:Literal>mitre</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-linecap">
+                      <ogc:Literal>butt</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dasharray">
+                      <ogc:Literal>1 0</ogc:Literal>
+                    </se:SvgParameter>
+                    <se:SvgParameter name="stroke-dashoffset">
+                      <ogc:Literal>0.0</ogc:Literal>
+                    </se:SvgParameter>
+                  </se:Stroke>
+                </se:Mark>
+                <se:Opacity>1</se:Opacity>
+                <se:Size>12</se:Size>
+                <se:Rotation>0</se:Rotation>
+              </se:Graphic>
+            </se:PointSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+  </te_map:LayerList>
+
+</Project>

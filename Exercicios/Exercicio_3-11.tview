@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project version="5.5.1" xmlns="http://www.terralib.org/schemas/qt/af" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:te_da="http://www.terralib.org/schemas/dataaccess" xmlns:te_map="http://www.terralib.org/schemas/maptools" xmlns:te_qt_af="http://www.terralib.org/schemas/common/af" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.terralib.org/schemas/qt/af C:\Program%20Files\TerraView-5.5.1\bin\..\share/terralib/schemas/terralib/qt/af/project.xsd">
+
+  <Title>Exercicio_3-11</Title>
+
+  <Author>INPE</Author>
+
+  <te_da:DataSourceList xmlns:te_common="http://www.terralib.org/schemas/common">
+    <te_da:DataSource access_driver="OGR" id="014ccc72-7d7b-4412-8102-6cf97f2316e4" type="OGR">
+      <te_da:Title>vetorizacao</te_da:Title>
+      <te_da:Description>C:/Curso_FGeo/Dados/SRTM_Topodata/vetorizacao.shp</te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FSRTM_Topodata%2Fvetorizacao.shp</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="2f8df029-4ab9-4367-abbe-a702e0c16f5b" type="GDAL">
+      <te_da:Title>fatiamento.tif</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FSRTM_Topodata%2Ffatiamento.tif</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="52bef0ed-3215-42f6-ab5b-65736ff29035" type="GDAL">
+      <te_da:Title>fatiamento2.tif</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FSRTM_Topodata%2Ffatiamento2.tif</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="7a47550c-6173-42d0-aaf1-aa798c74eb1b" type="GDAL">
+      <te_da:Title>sombra1.tif</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FSRTM_Topodata%2Fsombra1.tif</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="d01b47bd-b983-4b2f-ad2a-d5c6261c8ed6" type="GDAL">
+      <te_da:Title>mosaico_saida3.tif</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FSRTM_Topodata%2Fmosaico_saida3.tif</te_da:URI>
+    </te_da:DataSource>
+    <te_da:DataSource access_driver="GDAL" id="e324f7e9-b23e-4427-818b-0d76dc8a13f3" type="GDAL">
+      <te_da:Title>sombra.tif</te_da:Title>
+      <te_da:Description></te_da:Description>
+      <te_da:URI>file%3A%2F%2FC%3A%2FCurso_FGeo%2FDados%2FSRTM_Topodata%2Fsombra.tif</te_da:URI>
+    </te_da:DataSource>
+  </te_da:DataSourceList>
+
+  <ComponentList/>
+
+  <te_map:LayerList>
+    <te_map:DataSetLayer id="c00a3b8a-42d8-41dc-a31a-ebd6d719f429">
+      <te_map:Title>mosaico_saida3.tif</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>mosaico_saida3.tif</te_map:DataSetName>
+      <te_map:DataSourceId>d01b47bd-b983-4b2f-ad2a-d5c6261c8ed6</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-49.5" lly="-17.000000024199998" urx="-46.499999963699999" ury="-15"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+              <se:NoDataValue>0</se:NoDataValue>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="13f222c9-1005-4b58-9fb5-efd528d1717e">
+      <te_map:Title>sombra.tif</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:RasterContrast>
+        <te_map:ContrastType>0</te_map:ContrastType>
+        <te_map:NBands>1</te_map:NBands>
+        <te_map:BandContrast>
+          <te_map:GainContrast>0.14446937690001513</te_map:GainContrast>
+          <te_map:Offset1Contrast>-0</te_map:Offset1Contrast>
+          <te_map:Offset2Contrast>0</te_map:Offset2Contrast>
+          <te_map:minContrast>0</te_map:minContrast>
+          <te_map:maxContrast>1765.0799461569029</te_map:maxContrast>
+        </te_map:BandContrast>
+      </te_map:RasterContrast>
+      <te_map:DataSetName>sombra.tif</te_map:DataSetName>
+      <te_map:DataSourceId>e324f7e9-b23e-4427-818b-0d76dc8a13f3</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-49.5" lly="-17.000001600000001" urx="-46.4999976" ury="-15"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="07f05a6c-1cdb-45a8-9480-78e154165e1c">
+      <te_map:Title>fatiamento.tif</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>fatiamento.tif</te_map:DataSetName>
+      <te_map:DataSourceId>2f8df029-4ab9-4367-abbe-a702e0c16f5b</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-49.5" lly="-17.000000024199998" urx="-46.499999963699999" ury="-15"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+              <se:NoDataValue>10</se:NoDataValue>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="a48dba33-d9e5-446f-8e59-75fd70b608cd">
+      <te_map:Title>fatiamento2.tif</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>fatiamento2.tif</te_map:DataSetName>
+      <te_map:DataSourceId>52bef0ed-3215-42f6-ab5b-65736ff29035</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-49.5" lly="-17.000000024199998" urx="-46.499999963699999" ury="-15"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+              <se:NoDataValue>5</se:NoDataValue>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="158536fd-f456-4e2a-ae2e-37c3ecebf0eb">
+      <te_map:Title>vetorizacao</te_map:Title>
+      <te_map:Visible>VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:DataSetName>vetorizacao</te_map:DataSetName>
+      <te_map:DataSourceId>014ccc72-7d7b-4412-8102-6cf97f2316e4</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-49.5" lly="-17.000000024199998" urx="-46.499999963699999" ury="-15"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#6AC45A</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:Style>
+      <te_map:SelectionStyle>
+        <se:FeatureTypeStyle version="1.1.0">
+          <se:Name>Estilo de seleÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:PolygonSymbolizer version="1.1.0">
+              <se:Fill>
+                <se:SvgParameter name="fill">
+                  <ogc:Literal>#00ff00</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="fill-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Fill>
+              <se:Stroke>
+                <se:SvgParameter name="stroke">
+                  <ogc:Literal>#000000</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-opacity">
+                  <ogc:Literal>1.0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-width">
+                  <ogc:Literal>1</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linejoin">
+                  <ogc:Literal>mitre</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-linecap">
+                  <ogc:Literal>butt</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dasharray">
+                  <ogc:Literal>1 0</ogc:Literal>
+                </se:SvgParameter>
+                <se:SvgParameter name="stroke-dashoffset">
+                  <ogc:Literal>0.0</ogc:Literal>
+                </se:SvgParameter>
+              </se:Stroke>
+              <se:PerpendicularOffset>
+                <ogc:Literal>0.0</ogc:Literal>
+              </se:PerpendicularOffset>
+            </se:PolygonSymbolizer>
+          </se:Rule>
+        </se:FeatureTypeStyle>
+      </te_map:SelectionStyle>
+    </te_map:DataSetLayer>
+    <te_map:DataSetLayer id="76868864-f7a7-4d70-a56b-337ee759bb0b">
+      <te_map:Title>sombra1.tif</te_map:Title>
+      <te_map:Visible>NOT_VISIBLE</te_map:Visible>
+      <te_map:Encoding>UTF-8</te_map:Encoding>
+      <te_map:RasterContrast>
+        <te_map:ContrastType>0</te_map:ContrastType>
+        <te_map:NBands>1</te_map:NBands>
+        <te_map:BandContrast>
+          <te_map:GainContrast>0.14446937690001513</te_map:GainContrast>
+          <te_map:Offset1Contrast>-0</te_map:Offset1Contrast>
+          <te_map:Offset2Contrast>0</te_map:Offset2Contrast>
+          <te_map:minContrast>0</te_map:minContrast>
+          <te_map:maxContrast>1765.0799461569029</te_map:maxContrast>
+        </te_map:BandContrast>
+      </te_map:RasterContrast>
+      <te_map:DataSetName>sombra1.tif</te_map:DataSetName>
+      <te_map:DataSourceId>7a47550c-6173-42d0-aaf1-aa798c74eb1b</te_map:DataSourceId>
+      <te_map:SRSInfo>
+        <te_map:SRID>4326</te_map:SRID>
+        <te_map:Proj4>+proj=longlat +datum=WGS84 +no_defs</te_map:Proj4>
+      </te_map:SRSInfo>
+      <te_map:Extent llx="-49.5" lly="-17.000001600000001" urx="-46.4999976" ury="-15"/>
+      <te_map:RendererId>ABSTRACT_LAYER_RENDERER</te_map:RendererId>
+      <te_map:CompositionMode>0</te_map:CompositionMode>
+      <te_map:Style>
+        <se:CoverageStyle version="1.1.0">
+          <se:Name>Estilo de visualizaÃ§Ã£o</se:Name>
+          <se:Rule>
+            <se:RasterSymbolizer version="1.1.0">
+              <se:Opacity>
+                <ogc:Literal>1.0</ogc:Literal>
+              </se:Opacity>
+              <se:ChannelSelection>
+                <se:GrayChannel>
+                  <se:SourceChannelName>0</se:SourceChannelName>
+                </se:GrayChannel>
+              </se:ChannelSelection>
+              <se:Gain>0</se:Gain>
+              <se:Offset>0</se:Offset>
+            </se:RasterSymbolizer>
+          </se:Rule>
+        </se:CoverageStyle>
+      </te_map:Style>
+    </te_map:DataSetLayer>
+  </te_map:LayerList>
+
+</Project>
